@@ -1,0 +1,22 @@
+{
+  "schema_version": "plot.v1",
+  "title": "Silent Cells",
+  "series": "Bulls Breed (R5)",
+  "season": 1,
+  "structure": ["blocks", "chapters", "scenes"],
+  "root_paths": {
+    "blocks": "/blocks",
+    "chapters": "/chapters",
+    "scenes": "/scenes"
+  },
+  "index_paths": {
+    "toc": "/toc.json",
+    "flat": "/index.json"
+  },
+  "globals": {
+    "writing_order": ["心理", "制度", "行動"],
+    "token_method": "トークン挿入式（E1..）",
+    "viewpoint_rule": "一人称固定（Blockごと）"
+  },
+  "updated_at": "2025-10-15T00:00:00Z"
+}

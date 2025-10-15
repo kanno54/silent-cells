@@ -1,0 +1,42 @@
+{
+  "id": "blk_prologue",
+  "type": "block",
+  "title": "プロローグ：二層の幕開け",
+  "viewpoint": "C01",
+  "timespan": "PROLOGUE",
+  "summary": "表舞台（Ark Bulls）と裏（Breed）の二層を一撃で提示。終盤、C01がBulls Maskでフィールドインし、P6（LUU補修補助）を“宣言して”実施する。",
+  "order": {
+    "prev_id": null,
+    "next_id": "blk_c01_q1"
+  },
+  "children": [
+    "/chapters/blk_prologue__ch_01"
+  ],
+  "refs": {
+    "modules": [
+      "world_sevens.json",
+      "team_arcbulls.json",
+      "rule_system_bulls_breed.json",
+      "r5_zone_task_definitions.json",
+      "r5_daily_equipment.json",
+      "r5_biological_control_module.json",
+      "rule_system_r5_servant.json",
+      "r5_onboarding_sequence.json",
+      "abstinence_protocol.json"
+    ],
+    "characters": [
+      "C01",
+      "C02",
+      "C03",
+      "C04"
+    ],
+    "world": [
+      "world_bulls_breed_exploitation.json"
+    ]
+  },
+  "tags": [
+    "R5"
+  ],
+  "status": "draft",
+  "updated_at": "2025-10-15T08:53:26.849836+09:00"
+}

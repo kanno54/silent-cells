@@ -1,0 +1,40 @@
+{
+  "id": "blk_c03_q3",
+  "type": "block",
+  "title": "三者のずれ（依存の温度）",
+  "viewpoint": "C03",
+  "timespan": "Q3",
+  "summary": "必要とされたいC03の情動が制度に吸い込まれる。三者の温度差と‘慣れ’の怖さ。",
+  "order": {
+    "prev_id": "blk_c02_q2",
+    "next_id": "blk_c04_q4"
+  },
+  "children": [],
+  "refs": {
+    "modules": [
+      "world_sevens.json",
+      "team_arcbulls.json",
+      "rule_system_bulls_breed.json",
+      "r5_zone_task_definitions.json",
+      "r5_daily_equipment.json",
+      "r5_biological_control_module.json",
+      "rule_system_r5_servant.json",
+      "r5_onboarding_sequence.json",
+      "abstinence_protocol.json"
+    ],
+    "characters": [
+      "C01",
+      "C02",
+      "C03",
+      "C04"
+    ],
+    "world": [
+      "world_bulls_breed_exploitation.json"
+    ]
+  },
+  "tags": [
+    "R5"
+  ],
+  "status": "draft",
+  "updated_at": "2025-10-15T08:53:26.849836+09:00"
+}

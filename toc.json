@@ -1,0 +1,59 @@
+{
+  "schema_version": "plot.v1",
+  "title": "Silent Cells — TOC",
+  "nodes": [
+    {
+      "id": "blk_prologue",
+      "type": "block",
+      "title": "プロローグ：二層の幕開け",
+      "path": "/blocks/blk_prologue",
+      "children": [
+        {
+          "id": "ch_01",
+          "type": "chapter",
+          "title": "幕間の宣言（P6：パンツ補給）",
+          "path": "/chapters/blk_prologue__ch_01",
+          "children": [
+            {
+              "id": "sc_01",
+              "type": "scene",
+              "title": "Bulls Maskの下で",
+              "path": "/scenes/blk_prologue__ch_01__sc_01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blk_c01_q1",
+      "type": "block",
+      "title": "孤独な四角（SilentCellの季節）",
+      "path": "/blocks/blk_c01_q1"
+    },
+    {
+      "id": "blk_c02_q2",
+      "type": "block",
+      "title": "二人の地獄（規律と反発）",
+      "path": "/blocks/blk_c02_q2"
+    },
+    {
+      "id": "blk_c03_q3",
+      "type": "block",
+      "title": "三者のずれ（依存の温度）",
+      "path": "/blocks/blk_c03_q3"
+    },
+    {
+      "id": "blk_c04_q4",
+      "type": "block",
+      "title": "四つの沈黙（WOS前夜）",
+      "path": "/blocks/blk_c04_q4"
+    },
+    {
+      "id": "bonus_wos",
+      "type": "block",
+      "title": "WOS：沈黙の審問",
+      "path": "/blocks/bonus_wos"
+    }
+  ],
+  "updated_at": "2025-10-15T08:53:26.849836+09:00"
+}

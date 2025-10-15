@@ -1,0 +1,40 @@
+{
+  "id": "bonus_wos",
+  "type": "block",
+  "title": "WOS：沈黙の審問",
+  "viewpoint": "C04",
+  "timespan": "BONUS",
+  "summary": "年末三日間のWOS。歓声のない最終判定。最下位は翌年もR5残留、他は除籍。",
+  "order": {
+    "prev_id": "blk_c04_q4",
+    "next_id": null
+  },
+  "children": [],
+  "refs": {
+    "modules": [
+      "world_sevens.json",
+      "team_arcbulls.json",
+      "rule_system_bulls_breed.json",
+      "r5_zone_task_definitions.json",
+      "r5_daily_equipment.json",
+      "r5_biological_control_module.json",
+      "rule_system_r5_servant.json",
+      "r5_onboarding_sequence.json",
+      "abstinence_protocol.json"
+    ],
+    "characters": [
+      "C01",
+      "C02",
+      "C03",
+      "C04"
+    ],
+    "world": [
+      "world_bulls_breed_exploitation.json"
+    ]
+  },
+  "tags": [
+    "R5"
+  ],
+  "status": "draft",
+  "updated_at": "2025-10-15T08:53:26.849836+09:00"
+}

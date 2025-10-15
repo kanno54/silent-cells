@@ -1,0 +1,27 @@
+{
+  "id": "sc_01",
+  "type": "scene",
+  "title": "Bulls Maskの下で",
+  "parent_path": "/chapters/blk_prologue__ch_01",
+  "viewpoint": "C01",
+  "goal": "“表のスター／裏の奉仕者”の断絶を1カットで刻む",
+  "token_plan": [],
+  "outline": [
+    "歓声→無音加工の切り替え。C01の呼吸音だけが近い。",
+    "視界の端でLUUが切れる。足が勝手に動く。",
+    "『C01、補給奉仕に入ります』。視界が狭まる。",
+    "自力で履き直す選手の手元が視界から外れる角度（伏せ）。",
+    "C01は“居てはいけない速度”で離脱。ログの数字だけが赤く跳ねる。"
+  ],
+  "runtime_estimate_chars": 1200,
+  "order": {
+    "prev_id": null,
+    "next_id": null
+  },
+  "tags": [
+    "P6",
+    "導入",
+    "コントラスト演出"
+  ],
+  "updated_at": "2025-10-15T08:53:26.849836+09:00"
+}

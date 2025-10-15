@@ -1,0 +1,40 @@
+{
+  "id": "blk_c01_q1",
+  "type": "block",
+  "title": "孤独な四角（SilentCellの季節）",
+  "viewpoint": "C01",
+  "timespan": "Q1",
+  "summary": "C01の“既に地獄にいる”日常：禁欲（Zone I）、排泄（U5）、基礎作業（U1）。孤独の規格化。",
+  "order": {
+    "prev_id": "blk_prologue",
+    "next_id": "blk_c02_q2"
+  },
+  "children": [],
+  "refs": {
+    "modules": [
+      "world_sevens.json",
+      "team_arcbulls.json",
+      "rule_system_bulls_breed.json",
+      "r5_zone_task_definitions.json",
+      "r5_daily_equipment.json",
+      "r5_biological_control_module.json",
+      "rule_system_r5_servant.json",
+      "r5_onboarding_sequence.json",
+      "abstinence_protocol.json"
+    ],
+    "characters": [
+      "C01",
+      "C02",
+      "C03",
+      "C04"
+    ],
+    "world": [
+      "world_bulls_breed_exploitation.json"
+    ]
+  },
+  "tags": [
+    "R5"
+  ],
+  "status": "draft",
+  "updated_at": "2025-10-15T08:53:26.849836+09:00"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ch_01",
+  "type": "chapter",
+  "title": "幕間の宣言（P6：パンツ補給）",
+  "parent_path": "/blocks/blk_prologue",
+  "summary": "Ark Bullsの華やかな試合中継に、Breed配信が割り込む“二層構造”。C01がBulls Maskのままフィールドへ。P6（LUU補修）を宣言→実施。",
+  "beats": [
+    "二層のスイッチング演出：WSF映像→Breed配信",
+    "C01、サイドラインで待機：替えパンツ携行",
+    "LUU露出発生→“補給奉仕に入ります”と宣言（mandatory speech）",
+    "選手は自力で履き直す／C01は即離脱→観衆ログが跳ねる"
+  ],
+  "children": [
+    "/scenes/blk_prologue__ch_01__sc_01"
+  ],
+  "order": {
+    "prev_id": null,
+    "next_id": null
+  },
+  "tags": [
+    "Prologue",
+    "P6",
+    "Bulls Mask",
+    "Ark Bulls"
+  ],
+  "updated_at": "2025-10-15T08:53:26.849836+09:00"
+}

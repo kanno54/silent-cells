@@ -1,0 +1,45 @@
+{
+  "block_id": "blk_c01_q1",
+  "chapter_id": "ch_03",
+  "title": "U1：基礎維持",
+  "version": "1.0",
+  "status": "stub",
+  "owner_pov": "C01-first-person",
+  "created_at": "2025-10-15T02:16:11",
+  "updated_at": "2025-10-15T02:16:11",
+  "scenes": [
+    {
+      "scene_id": "sc_01",
+      "title": "床と備品の基礎維持",
+      "goal": "U1の非公開作業で“ログ＝存在価値”を理解させる",
+      "outline": [
+        "床磨きルーティン",
+        "備品整理・点検",
+        "終了スキャン"
+      ],
+      "protocol_refs": [
+        "U1"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_02",
+      "title": "発汗ログの違和感",
+      "goal": "身体反応が数値化される疎外感を描く",
+      "outline": [
+        "チョーカーの光",
+        "HUDの発汗・脈拍グラフ",
+        "短い義務セリフ"
+      ],
+      "protocol_refs": [
+        "U1",
+        "Choker"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    }
+  ]
+}

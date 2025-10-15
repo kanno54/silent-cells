@@ -1,0 +1,20 @@
+{
+  "id": "sc_05",
+  "type": "scene",
+  "title": "地下への沈降（C01視点）",
+  "parent_path": "/chapters/blk_prologue__ch_00",
+  "viewpoint": "C01",
+  "goal": "地上の喧騒から地下の静寂へトーンを切り替える",
+  "outline": [
+    "C01が退場。照明が落ちる。歓声が遠ざかる。",
+    "搬入口の赤ランプと機械音。",
+    "視点が地下層へ沈んでいく。"
+  ],
+  "runtime_estimate_chars": 800,
+  "tags": [
+    "R5",
+    "沈降",
+    "静寂"
+  ],
+  "updated_at": "2025-10-15T09:30:00+09:00"
+}

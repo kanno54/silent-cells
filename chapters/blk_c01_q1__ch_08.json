@@ -1,0 +1,68 @@
+{
+  "block_id": "blk_c01_q1",
+  "chapter_id": "ch_08",
+  "title": "Zone I：経過日（Day2–Day6）",
+  "version": "1.0",
+  "status": "stub",
+  "owner_pov": "C01-first-person",
+  "created_at": "2025-10-15T02:16:11",
+  "updated_at": "2025-10-15T02:16:11",
+  "scenes": [
+    {
+      "scene_id": "sc_01",
+      "title": "A4：課金タイム（変奏）",
+      "goal": "ある日／ない日の差で心的負荷を描く",
+      "outline": [
+        "カウントダウン表示",
+        "命令の断片",
+        "体勢維持の筋疲労"
+      ],
+      "protocol_refs": [
+        "Zone_I",
+        "A4"
+      ],
+      "token_plan": [
+        {
+          "id": "E2",
+          "desc": "視線化された羞恥（非具体）"
+        }
+      ],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_02",
+      "title": "A5：継続宣言",
+      "goal": "赦し申請をあえて保留し、積算日数を稼ぐ",
+      "outline": [
+        "迷い→定型句で継続を宣言",
+        "ログ保存音",
+        "HUDに“+1day”"
+      ],
+      "protocol_refs": [
+        "Zone_I",
+        "A5"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_03",
+      "title": "Pod夜間ログ",
+      "goal": "夢精検知など数値の変動を“数字で恥を測る”視点で置く",
+      "outline": [
+        "LEDの点滅",
+        "脈拍グラフの微増",
+        "翌朝のメッセージ"
+      ],
+      "protocol_refs": [
+        "Pod",
+        "night_log"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    }
+  ]
+}

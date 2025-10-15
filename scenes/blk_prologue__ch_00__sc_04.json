@@ -1,0 +1,19 @@
+{
+  "id": "sc_04",
+  "type": "scene",
+  "title": "広報インサート",
+  "parent_path": "/chapters/blk_prologue__ch_00",
+  "viewpoint": "第三者",
+  "goal": "企業的冷笑を挟み、制度の一体性を強調する",
+  "outline": [
+    "試合映像上にテロップ：『提供：Bulls Order Holdings』",
+    "『このあと地下配信“Bulls Slave”へ自動接続』のアナウンス。",
+    "冷たいAI音声、ロゴアニメ、宣伝的映像。"
+  ],
+  "runtime_estimate_chars": 600,
+  "tags": [
+    "広報",
+    "Corporate Overlay"
+  ],
+  "updated_at": "2025-10-15T09:30:00+09:00"
+}

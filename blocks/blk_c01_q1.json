@@ -35,6 +35,143 @@
   "tags": [
     "R5"
   ],
-  "status": "draft",
-  "updated_at": "2025-10-15T08:53:26.849836+09:00"
+  "status": "in_progress",
+  "updated_at": "2025-10-15T02:16:11",
+  "chapters": [
+    {
+      "chapter_id": "ch_01",
+      "title": "登録の残響",
+      "file": "blk_c01_q1__ch_01.json",
+      "scene_count": 2,
+      "tags": [
+        "T5",
+        "T6",
+        "Zone_S"
+      ]
+    },
+    {
+      "chapter_id": "ch_02",
+      "title": "朝補給と義務発話",
+      "file": "blk_c01_q1__ch_02.json",
+      "scene_count": 3,
+      "tags": [
+        "Pod",
+        "SNF",
+        "DutySpeech"
+      ]
+    },
+    {
+      "chapter_id": "ch_03",
+      "title": "U1：基礎維持",
+      "file": "blk_c01_q1__ch_03.json",
+      "scene_count": 2,
+      "tags": [
+        "U1",
+        "Uniform",
+        "Choker"
+      ]
+    },
+    {
+      "chapter_id": "ch_04",
+      "title": "U2：舞台補助",
+      "file": "blk_c01_q1__ch_04.json",
+      "scene_count": 2,
+      "tags": [
+        "U2",
+        "StageOps"
+      ]
+    },
+    {
+      "chapter_id": "ch_05",
+      "title": "U3：身体補助",
+      "file": "blk_c01_q1__ch_05.json",
+      "scene_count": 2,
+      "tags": [
+        "U3",
+        "CareOps"
+      ]
+    },
+    {
+      "chapter_id": "ch_06",
+      "title": "U5：公開排泄（初回）",
+      "file": "blk_c01_q1__ch_06.json",
+      "scene_count": 2,
+      "tags": [
+        "U5",
+        "PublicLog"
+      ]
+    },
+    {
+      "chapter_id": "ch_07",
+      "title": "Zone I：禁欲チュートリアル（Day1）",
+      "file": "blk_c01_q1__ch_07.json",
+      "scene_count": 2,
+      "tags": [
+        "Zone_I",
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "chapter_id": "ch_08",
+      "title": "Zone I：経過日（Day2–Day6）",
+      "file": "blk_c01_q1__ch_08.json",
+      "scene_count": 3,
+      "tags": [
+        "Zone_I",
+        "A4",
+        "A5",
+        "PodLog"
+      ]
+    },
+    {
+      "chapter_id": "ch_09",
+      "title": "Zone I：赦しライブ→再装着（Day7）",
+      "file": "blk_c01_q1__ch_09.json",
+      "scene_count": 3,
+      "tags": [
+        "Zone_I",
+        "B1",
+        "A6",
+        "A7",
+        "Zone_S"
+      ]
+    }
+  ],
+  "protocol_map": {
+    "Zone_I": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "B1",
+      "A6",
+      "A7"
+    ],
+    "U": [
+      "U1",
+      "U2",
+      "U3",
+      "U5"
+    ],
+    "Zones": [
+      "Zone I",
+      "Zone S"
+    ],
+    "Pod": [
+      "unlock",
+      "intake",
+      "night_log",
+      "dream_detect"
+    ],
+    "Speech": [
+      "start_decl",
+      "finish_decl",
+      "wash_req",
+      "forgive_vote"
+    ]
+  },
+  "owner_pov": "C01-first-person"
 }

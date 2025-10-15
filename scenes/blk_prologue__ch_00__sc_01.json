@@ -1,0 +1,19 @@
+{
+  "id": "sc_01",
+  "type": "scene",
+  "title": "Ark Bulls速報（地上層）",
+  "parent_path": "/chapters/blk_prologue__ch_00",
+  "viewpoint": "第三者",
+  "goal": "華やかなSevens世界を提示し、対比の基準を作る",
+  "outline": [
+    "Sevens試合速報。Ark Bulls勝利。光・歓声・報道映像。",
+    "カメラが会場全体を舐めるように映し、スポンサー広告が流れる。"
+  ],
+  "runtime_estimate_chars": 800,
+  "tags": [
+    "Sevens",
+    "Ark Bulls",
+    "地上層"
+  ],
+  "updated_at": "2025-10-15T09:30:00+09:00"
+}

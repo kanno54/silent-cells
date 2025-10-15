@@ -1,0 +1,55 @@
+{
+  "block_id": "blk_c01_q1",
+  "chapter_id": "ch_06",
+  "title": "U5：公開排泄（初回）",
+  "version": "1.0",
+  "status": "stub",
+  "owner_pov": "C01-first-person",
+  "created_at": "2025-10-15T02:16:11",
+  "updated_at": "2025-10-15T02:16:11",
+  "scenes": [
+    {
+      "scene_id": "sc_01",
+      "title": "公開排泄プロトコル（初回）",
+      "goal": "整列→声出し→解除→実施→洗浄→再装着→完了報告までの手順提示",
+      "outline": [
+        "整列と番号呼称",
+        "解除手順",
+        "実施→洗浄→再装着",
+        "完了報告と退出"
+      ],
+      "protocol_refs": [
+        "U5",
+        "PublicLog"
+      ],
+      "token_plan": [
+        {
+          "id": "E2",
+          "desc": "公開羞恥の体験"
+        },
+        {
+          "id": "E5",
+          "desc": "再装着プロセス（具体は伏せ）"
+        }
+      ],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_02",
+      "title": "羞恥指数の登録",
+      "goal": "スコア化の瞬間を視覚・聴覚で刻む",
+      "outline": [
+        "端末への登録音",
+        "表示板の更新",
+        "客席のざわめき"
+      ],
+      "protocol_refs": [
+        "U5"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    }
+  ]
+}

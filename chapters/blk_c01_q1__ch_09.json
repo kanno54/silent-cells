@@ -1,0 +1,80 @@
+{
+  "block_id": "blk_c01_q1",
+  "chapter_id": "ch_09",
+  "title": "Zone I：赦しライブ→再装着（Day7）",
+  "version": "1.0",
+  "status": "stub",
+  "owner_pov": "C01-first-person",
+  "created_at": "2025-10-15T02:16:11",
+  "updated_at": "2025-10-15T02:16:11",
+  "scenes": [
+    {
+      "scene_id": "sc_01",
+      "title": "B1：赦しライブ",
+      "goal": "双方向の命令／投票→FORGIVE過半の決定瞬間を描く",
+      "outline": [
+        "カメラ起動",
+        "命令列",
+        "投票ゲージの伸び",
+        "決定音"
+      ],
+      "protocol_refs": [
+        "Zone_I",
+        "B1"
+      ],
+      "token_plan": [
+        {
+          "id": "E3",
+          "desc": "赦し開放の瞬間"
+        },
+        {
+          "id": "E4",
+          "desc": "拒絶分岐の可能性（今回は不採用）"
+        }
+      ],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_02",
+      "title": "A6：再装着・洗身ログ",
+      "goal": "洗身→再装着→インジケータの色変化で帰結を見せる",
+      "outline": [
+        "Zone Sへ誘導",
+        "洗身ログの保存",
+        "再装着→緑点灯"
+      ],
+      "protocol_refs": [
+        "Zone_I",
+        "A6",
+        "Zone_S"
+      ],
+      "token_plan": [
+        {
+          "id": "E5",
+          "desc": "再装着プロセス（伏せ）"
+        }
+      ],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_03",
+      "title": "A7：終了宣言／翌朝への吊り橋",
+      "goal": "終了の義務発話→照明変化→翌朝への予告でブロックを閉じる",
+      "outline": [
+        "終了宣言の定型句",
+        "照明の青白へのフェード",
+        "“明朝05:30解錠”の表示"
+      ],
+      "protocol_refs": [
+        "Zone_I",
+        "A7",
+        "Pod"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    }
+  ]
+}

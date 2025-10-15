@@ -1,0 +1,47 @@
+{
+  "block_id": "blk_c01_q1",
+  "chapter_id": "ch_01",
+  "title": "登録の残響",
+  "version": "1.0",
+  "status": "stub",
+  "owner_pov": "C01-first-person",
+  "created_at": "2025-10-15T02:16:11",
+  "updated_at": "2025-10-15T02:16:11",
+  "scenes": [
+    {
+      "scene_id": "sc_01",
+      "title": "動作チュートリアル",
+      "goal": "登録直後の基本動作と番号呼称・用具操作の型を体に入れる",
+      "outline": [
+        "AIガイダンスの声",
+        "立位→番号→息返答",
+        "用具操作の教示",
+        "終了チェック"
+      ],
+      "protocol_refs": [
+        "T5",
+        "T6",
+        "Zone_S"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_02",
+      "title": "活動開始の通達",
+      "goal": "“器としての朝”を自覚させる宣言で稼働を始める",
+      "outline": [
+        "終了宣言→許可音",
+        "通路の照度とチョーカー点灯",
+        "業務割当のHUD表示"
+      ],
+      "protocol_refs": [
+        "T6"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    }
+  ]
+}

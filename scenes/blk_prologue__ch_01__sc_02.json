@@ -1,0 +1,22 @@
+{
+  "id": "sc_02",
+  "type": "scene",
+  "title": "反響の廊下",
+  "parent_path": "/chapters/blk_prologue__ch_01",
+  "viewpoint": "C01",
+  "goal": "表の歓声／裏の無音を対比させ、制度的孤独を印象づける",
+  "outline": [
+    "遮音された通路。靴音と呼吸だけ。",
+    "チョーカーLEDが赤点滅→通知『補給ログ：完了』。",
+    "金属返納台にBulls Maskの影が歪む。",
+    "記録官の指示『C01、補給奉仕、完了しました』発話義務。",
+    "遠景モニタには再びArk Bullsの勝利速報。",
+    "Breed側の数値だけが赤く跳ねる。",
+    "C01は線に沿って歩き、暗転。"
+  ],
+  "token_plan": [],
+  "runtime_estimate_chars": 1200,
+  "order": { "prev_id": "sc_01", "next_id": null },
+  "tags": ["Prologue","P6","コントラスト演出"],
+  "updated_at": "2025-10-15T09:21:00+09:00"
+}

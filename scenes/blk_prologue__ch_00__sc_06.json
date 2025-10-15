@@ -1,0 +1,20 @@
+{
+  "id": "sc_06",
+  "type": "scene",
+  "title": "モノローグ",
+  "parent_path": "/chapters/blk_prologue__ch_00",
+  "viewpoint": "C01",
+  "goal": "制度への自覚と皮肉を提示する",
+  "outline": [
+    "暗闇の中で、C01の心の声。",
+    "『光の下で笑う奴らを支えるのが、俺たちの仕事……』",
+    "金属音と呼吸だけが残り、タイトルロゴへ。"
+  ],
+  "runtime_estimate_chars": 700,
+  "tags": [
+    "R5",
+    "内省",
+    "風刺"
+  ],
+  "updated_at": "2025-10-15T09:30:00+09:00"
+}

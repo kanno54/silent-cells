@@ -1,0 +1,262 @@
+{
+  "schema_version": "ops.v1",
+  "name": "plot_tree_ops_rules",
+  "purpose": "R5連作『Silent Cells』のプロット管理で、GPTが迷子にならないための運用ルール一式。",
+  "scope": {
+    "project": "Silent Cells",
+    "series": "Bulls Breed (R5)",
+    "season": 1
+  },
+  "globals": {
+    "writing_order": [
+      "心理",
+      "制度",
+      "行動"
+    ],
+    "token_method": "トークン挿入式（E1, E2, ...）",
+    "viewpoint_rule": "一人称固定（Blockごと）",
+    "date_format": "YYYY-MM-DDTHH:mm:ssZ"
+  },
+  "paths": {
+    "root": "/",
+    "blocks": "/blocks",
+    "chapters": "/chapters",
+    "scenes": "/scenes",
+    "manifest": "/manifest.json",
+    "toc": "/toc.json",
+    "index": "/index.json",
+    "separator": "__"
+  },
+  "node_types": {
+    "block": {
+      "id_pattern": "blk_<who>_<period> | blk_prologue | bonus_wos",
+      "filename": "/blocks/<block_id>.json",
+      "required_fields": [
+        "id",
+        "type",
+        "title",
+        "viewpoint",
+        "timespan",
+        "summary",
+        "order",
+        "children",
+        "refs",
+        "tags",
+        "status",
+        "updated_at"
+      ]
+    },
+    "chapter": {
+      "id_pattern": "ch_\\d{2}",
+      "filename": "/chapters/<block_id>__<chapter_id>.json",
+      "required_fields": [
+        "id",
+        "type",
+        "title",
+        "parent_path",
+        "summary",
+        "beats",
+        "children",
+        "tags",
+        "updated_at"
+      ]
+    },
+    "scene": {
+      "id_pattern": "sc_\\d{2}",
+      "filename": "/scenes/<block_id>__<chapter_id>__<scene_id>.json",
+      "required_fields": [
+        "id",
+        "type",
+        "title",
+        "parent_path",
+        "viewpoint",
+        "goal",
+        "outline",
+        "token_plan",
+        "runtime_estimate_chars",
+        "tags",
+        "updated_at"
+      ]
+    }
+  },
+  "id_rules": {
+    "stability": "IDは一度発行したら不変（再生成禁止）",
+    "chapter_sequence": "ch_01, ch_02, ...",
+    "scene_sequence": "sc_01, sc_02, ...",
+    "child_filename": "<block_id>__<child_id>.json",
+    "scene_filename": "<block_id>__<chapter_id>__<scene_id>.json"
+  },
+  "ordering_rules": {
+    "source_of_truth": "章ファイル（chapter）のchildren配列順を正とする",
+    "prev_next_fields": "order.prev_id / order.next_id は任意。未設定可",
+    "toc_index_policy": "toc.json と index.json は派生物（後でバッチ再生成）"
+  },
+  "update_policy": {
+    "chapter_only_mode": {
+      "allowed": true,
+      "when_to_use": [
+        "シーンの追加・並び替えの初期作業",
+        "軽微な改稿時"
+      ],
+      "do": [
+        "章ファイルのchildrenに新シーンのパスを追加",
+        "章ファイルにscene_stubs（未実体化）を追記",
+        "必要ならsummary/beatsを更新"
+      ],
+      "may_skip": [
+        "toc.json",
+        "index.json",
+        "order.prev_id/next_id"
+      ],
+      "later_batch": [
+        "toc/index を再生成して同期"
+      ]
+    },
+    "full_update_mode": {
+      "use_when": [
+        "リリース前",
+        "大規模な構成変更"
+      ],
+      "do": [
+        "新規シーン本体を /scenes に作成",
+        "章children・orderを更新",
+        "toc.json / index.json を再生成"
+      ]
+    }
+  },
+  "scene_stubs": {
+    "enabled": true,
+    "key": "scene_stubs",
+    "fields": [
+      "id",
+      "path",
+      "materialized",
+      "title",
+      "viewpoint",
+      "goal",
+      "outline",
+      "token_plan",
+      "runtime_estimate_chars",
+      "tags"
+    ],
+    "materialized_transition": "sceneファイル作成時にmaterializedをtrue、またはstub削除"
+  },
+  "toc_index": {
+    "derivation_rules": [
+      "blocks/*.json を走査し、childrenを辿って章・シーンを列挙",
+      "章children順で表示順を決定",
+      "parent_pathとpathの整合性を検証",
+      "tagsを収集して index.by_tag を更新"
+    ],
+    "frequency": "マージ時または1日1回",
+    "tool_hint": "rebuild_toc_index() のようなスクリプトで一括更新"
+  },
+  "validation": {
+    "checks": [
+      "parent_path と 実パスが一致するか",
+      "children 先のファイルが存在するか（chapter_only_modeではstub可）",
+      "IDパターンとファイル名が一致するか",
+      "updated_at のISO8601整形",
+      "重複IDがないか（by_id逆引きでユニーク）"
+    ],
+    "fail_policy": "検証失敗時は当該ノードのみDraft扱い。派生物再生成はスキップ"
+  },
+  "templates": {
+    "chapter_append_stub": {
+      "patch_example": {
+        "target": "/chapters/blk_prologue__ch_01.json",
+        "merge": {
+          "children": [
+            "/scenes/blk_prologue__ch_01__sc_01",
+            "/scenes/blk_prologue__ch_01__sc_02"
+          ],
+          "scene_stubs": [
+            {
+              "id": "sc_02",
+              "path": "/scenes/blk_prologue__ch_01__sc_02",
+              "materialized": false,
+              "title": "反響の廊下",
+              "viewpoint": "C01",
+              "goal": "表の歓声／裏の無音＋ログを固定化し、C01の“規格化された居場所”を体感させる",
+              "outline": [
+                "遮音に落ちる通路：換気音・靴音・呼吸のみ",
+                "チョーカーLEDが一瞬赤→通知『補給ログ：完了』",
+                "返納台の金属に歪むBulls Mask（顔ではなく役割が映る）",
+                "記録官の指差し→義務発話「C01、補給奉仕、完了しました」",
+                "遠景モニタは表中継へ復帰、Breed側の数値だけ赤く跳ねる",
+                "“線に沿う”移動＝生き延びるモチーフの提示",
+                "スタジアムのリプレイにC01の背が一瞬映り、Breedログだけが気づく"
+              ],
+              "token_plan": [],
+              "runtime_estimate_chars": 1200,
+              "tags": [
+                "Prologue",
+                "P6",
+                "コントラスト演出"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "scene_file_min": {
+      "id": "sc_02",
+      "type": "scene",
+      "title": "反響の廊下",
+      "parent_path": "/chapters/blk_prologue__ch_01",
+      "viewpoint": "C01",
+      "goal": "表の歓声／裏の無音＋ログを固定化し、C01の“規格化された居場所”を体感させる",
+      "outline": [
+        "遮音に落ちる通路：換気音・靴音・呼吸のみ",
+        "チョーカーLEDが一瞬赤→通知『補給ログ：完了』",
+        "返納台の金属に歪むBulls Mask（顔ではなく役割が映る）",
+        "記録官の指差し→義務発話「C01、補給奉仕、完了しました」",
+        "遠景モニタは表中継へ復帰、Breed側の数値だけ赤く跳ねる",
+        "“線に沿う”移動＝生き延びるモチーフの提示",
+        "スタジアムのリプレイにC01の背が一瞬映り、Breedログだけが気づく"
+      ],
+      "token_plan": [],
+      "runtime_estimate_chars": 1200,
+      "order": {
+        "prev_id": "sc_01",
+        "next_id": null
+      },
+      "tags": [
+        "Prologue",
+        "P6",
+        "コントラスト演出"
+      ],
+      "updated_at": "2025-10-15T09:20:46+09:00"
+    }
+  },
+  "commits": {
+    "message_format": "[blk|ch|sc]: <id> <verb>",
+    "examples": [
+      "feat(ch): blk_prologue ch_01 add sc_02 stub",
+      "feat(sc): blk_prologue ch_01 materialize sc_02",
+      "chore(toc): rebuild toc/index"
+    ]
+  },
+  "refs": {
+    "modules": [
+      "world_sevens.json",
+      "team_arcbulls.json",
+      "rule_system_bulls_breed.json",
+      "r5_zone_task_definitions.json",
+      "r5_daily_equipment.json",
+      "r5_biological_control_module.json",
+      "rule_system_r5_servant.json",
+      "r5_onboarding_sequence.json",
+      "abstinence_protocol.json",
+      "world_bulls_breed_exploitation.json"
+    ]
+  },
+  "tags_default": [
+    "R5"
+  ],
+  "safety": {
+    "tokenization_required": true,
+    "explicit_content": "記述しない（該当箇所はトークンで伏せる）"
+  },
+  "updated_at": "2025-10-15T09:20:46+09:00"
+}

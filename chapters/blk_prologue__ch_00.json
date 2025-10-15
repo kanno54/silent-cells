@@ -1,0 +1,25 @@
+{
+  "id": "ch_00",
+  "type": "chapter",
+  "title": "地上から地下へ：三層プロローグ",
+  "parent_path": "/blocks/blk_prologue",
+  "summary": "Sevens → Breed → R5の順に映像が下降。観衆が歓声を上げる華やかな世界から、無音と羞恥の支配する制度へカメラが沈降していく。",
+  "beats": [
+    "S0-1 Ark Bulls速報",
+    "S0-2 Bulls Breed LIVE",
+    "S0-3 パンツ交換補給（C01登場）",
+    "S0-4 広報インサート",
+    "S0-5 地下への沈降",
+    "S0-6 モノローグ"
+  ],
+  "children": [
+    "/scenes/blk_prologue__ch_00__sc_01",
+    "/scenes/blk_prologue__ch_00__sc_02",
+    "/scenes/blk_prologue__ch_00__sc_03",
+    "/scenes/blk_prologue__ch_00__sc_04",
+    "/scenes/blk_prologue__ch_00__sc_05",
+    "/scenes/blk_prologue__ch_00__sc_06"
+  ],
+  "tags": ["Prologue", "三層構造", "C01"],
+  "updated_at": "2025-10-15T09:30:00+09:00"
+}

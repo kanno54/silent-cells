@@ -1,0 +1,45 @@
+{
+  "block_id": "blk_c01_q1",
+  "chapter_id": "ch_05",
+  "title": "U3：身体補助",
+  "version": "1.0",
+  "status": "stub",
+  "owner_pov": "C01-first-person",
+  "created_at": "2025-10-15T02:16:11",
+  "updated_at": "2025-10-15T02:16:11",
+  "scenes": [
+    {
+      "scene_id": "sc_01",
+      "title": "ケア動作の補助",
+      "goal": "非性的なケアで接触閾値を上げる",
+      "outline": [
+        "マッサージ補助",
+        "衣装のずれ直し",
+        "終了の礼"
+      ],
+      "protocol_refs": [
+        "U3"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_02",
+      "title": "義務発話で区切る",
+      "goal": "ケア終了の義務発話を自分の声で締める",
+      "outline": [
+        "定型の終了宣言",
+        "ログ保存音",
+        "呼吸の整い"
+      ],
+      "protocol_refs": [
+        "U3",
+        "DutySpeech"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    }
+  ]
+}

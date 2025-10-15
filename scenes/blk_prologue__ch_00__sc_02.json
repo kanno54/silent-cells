@@ -1,0 +1,20 @@
+{
+  "id": "sc_02",
+  "type": "scene",
+  "title": "Bulls Breed LIVE（中層）",
+  "parent_path": "/chapters/blk_prologue__ch_00",
+  "viewpoint": "第三者",
+  "goal": "Breedを“ショー”として紹介し、表との繋がりを見せる",
+  "outline": [
+    "映像が同系列チャンネル『Bulls Breed LIVE』に切り替わる。",
+    "R4 Red Rumps対Blue Chestsの羞恥試合が始まる。実況が熱狂。",
+    "奉仕の芸術として制度が称賛される。"
+  ],
+  "runtime_estimate_chars": 1000,
+  "tags": [
+    "Breed",
+    "R4",
+    "羞恥芸術"
+  ],
+  "updated_at": "2025-10-15T09:30:00+09:00"
+}

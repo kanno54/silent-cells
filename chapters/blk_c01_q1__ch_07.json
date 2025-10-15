@@ -1,0 +1,53 @@
+{
+  "block_id": "blk_c01_q1",
+  "chapter_id": "ch_07",
+  "title": "Zone I：禁欲チュートリアル（Day1）",
+  "version": "1.0",
+  "status": "stub",
+  "owner_pov": "C01-first-person",
+  "created_at": "2025-10-15T02:16:11",
+  "updated_at": "2025-10-15T02:16:11",
+  "scenes": [
+    {
+      "scene_id": "sc_01",
+      "title": "A1→A2：開始宣言と洗浄",
+      "goal": "禁欲チュートリアルの教科書的遂行（感覚は伏せ）",
+      "outline": [
+        "誘導音→入室",
+        "開始宣言A1",
+        "解除→洗浄A2",
+        "記録光の点滅"
+      ],
+      "protocol_refs": [
+        "Zone_I",
+        "A1",
+        "A2"
+      ],
+      "token_plan": [
+        {
+          "id": "E1",
+          "desc": "解除・洗浄の身体感覚（伏せ）"
+        }
+      ],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_02",
+      "title": "A3：課金アナウンス",
+      "goal": "当日の課金有無の告知で緊張を作る",
+      "outline": [
+        "AIの読み上げ",
+        "HeatPulse/EchoVoice/VisualBloomの可否",
+        "呼吸調整"
+      ],
+      "protocol_refs": [
+        "Zone_I",
+        "A3"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    }
+  ]
+}

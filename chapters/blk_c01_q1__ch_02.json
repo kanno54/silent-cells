@@ -1,0 +1,66 @@
+{
+  "block_id": "blk_c01_q1",
+  "chapter_id": "ch_02",
+  "title": "朝補給と義務発話",
+  "version": "1.0",
+  "status": "stub",
+  "owner_pov": "C01-first-person",
+  "created_at": "2025-10-15T02:16:11",
+  "updated_at": "2025-10-15T02:16:11",
+  "scenes": [
+    {
+      "scene_id": "sc_01",
+      "title": "Intake 05:45",
+      "goal": "SNF補給による初期化を示す（感覚はトークン化）",
+      "outline": [
+        "Pod解錠→姿勢固定",
+        "補給ユニット接続",
+        "体内反応の立ち上がり"
+      ],
+      "protocol_refs": [
+        "Pod",
+        "SNF"
+      ],
+      "token_plan": [
+        {
+          "id": "E1",
+          "desc": "補給反応（身体感覚は伏せ）"
+        }
+      ],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_02",
+      "title": "義務発話アップ",
+      "goal": "義務発話スクリプトの練習で声と呼吸を整える",
+      "outline": [
+        "発声フォーム確認",
+        "番号・開始宣言を型通りに",
+        "ログ保存の視覚フィードバック"
+      ],
+      "protocol_refs": [
+        "DutySpeech"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    },
+    {
+      "scene_id": "sc_03",
+      "title": "SilentCell描写",
+      "goal": "Pod内のセンサと灯りで“監視と静寂”を可視化",
+      "outline": [
+        "LEDインジケータ",
+        "集音・体温・脈拍の監視HUD",
+        "施錠の効果音"
+      ],
+      "protocol_refs": [
+        "Pod"
+      ],
+      "token_plan": [],
+      "target_chars": 3000,
+      "status": "stub"
+    }
+  ]
+}
